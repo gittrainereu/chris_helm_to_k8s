@@ -26,4 +26,8 @@ jobs:
 # muss eindeutig sein 
       run: |
 
-        helm upgrade --install my-release ./chart/my-app --namespace christian --create-namespace
+        helm upgrade --install my-release ./charts/my-app --namespace christian --create-namespace 
+        kubectl -n christian get all
+
+
+
